@@ -1,0 +1,49 @@
+<!--Matthew Whitlow - Homework Assignment#1 07/10/2024 
+   This is the Map page for project Crab Island Concessions-->    
+      
+           <!DOCTYPE html>
+           <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Map</title>
+
+                <script type="module" src="./javascript.js"></script>
+ <!--call for bootstrap-->              
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            
+
+            </head>
+            <body>
+<!--Navigation bar located at the top of the screen-->
+            <ul class="nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="signin.html">Vendor</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li> 
+            </ul> 
+
+  <!--Call the map and run some javascript-->               
+                <div id="map"  style="width: 100%; height: 400px;"></div>
+                <div>
+                    <p>The General Store is stationary and it's location is labeled by the red/yellow flag</p>
+                    <p>Please click Update My Location at the top of the map</p>
+                </div>
+                
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTqjFFn4u1nbQhnI8DIkwFDQo25S3dnJA&callback=initMap&v=weekly"
+                defer              
+                ></script>
+
+            </body>
+            </html>

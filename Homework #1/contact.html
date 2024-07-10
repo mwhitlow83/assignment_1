@@ -1,0 +1,98 @@
+   <!--Matthew Whitlow - Homework Assignment#1 07/10/2024 
+   This is the contact form for project Crab Island Concessions-->     
+      
+        
+        <!DOCTYPE html>
+        <html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contact</title>
+        
+
+             <!--call for bootstrap-->              
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          
+            <link rel="stylesheet" 
+                  href="style.css">
+                  
+                
+        </head>
+
+        <body>
+
+<!--Navigation bar located at the top of the screen-->
+            <ul class="nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="signin.html">Vendor</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li> 
+            </ul> 
+
+            <h1>Contact</h1>
+<!--submission powered by formspree. submission tested and verified that it works-->
+            <form action="https://formspree.io/f/xyzgzgqq" 
+            method="POST">
+                <div class="form-row">
+                        <label class="cfield">First Name:
+                                <input 
+                                type="text" 
+                                name="first-name" 
+                                required>
+                        </label>
+                </div>
+ 
+<!--input for first name-->
+                <div class="form-row">
+                        <label class="cfield">Last Name:
+                            <input 
+                                type="text" 
+                                name="last-name" >
+                        </label>
+                </div>
+ 
+ <!--input for email  -->               
+                <div class="form-row">
+                        <label class="cfield">Email:
+                            <input                            
+                                type="email" 
+                                name="email" 
+                            required>
+                        </label>
+                </div>
+
+ <!--input for comment-->               
+            <div class="form-row">
+                <label class="cfield">Comment
+                    <textarea 
+                        name="message" 
+                        cols="30" 
+                        rows="10" 
+                        required></textarea>
+                </label>
+
+            </div>
+
+            
+<!--submit the goodies-->
+                <button type="submit">Send</button>
+                <button type="reset">Clear</button>
+            </form>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous"></script>
+        </body>
+        </html>

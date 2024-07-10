@@ -1,0 +1,101 @@
+ <!--Matthew Whitlow - Homework Assignment#1 07/10/2024 
+   This is the homepage index for project Crab Island Concessions-->          
+            
+            <!DOCTYPE html>
+            <html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+<!--call for bootstrap-->              
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+                rel="stylesheet" 
+                integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                
+<!--custom css sheet goes after bootstrap in order to override bootstrap's styles-->
+                <link rel="stylesheet" 
+                href="style.css">
+
+            <script type="module" src="./javascript.js"></script>
+
+            </head>
+            <body class="crabby">
+
+<!--Navigation bar located at the top of the screen-->
+                <ul class="nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Vendor</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul> 
+
+<!--Heading below navigation bar-->
+            <h1 class="text-center">Crab Island Concessions</h1>
+            <h2 class="text-center">Please select from the following vendors</h2>
+                
+<!--List of products using bootstrap cards-->
+            <div class="container-fluid">
+                    <div class="row row-cols-2 row-cols-md-4">          
+                        <div class="col mb-4">              
+    <!--Pineapple card-->     <div class="card h-100"> 
+                                <img src="./Photos/pine.jpg" 
+                                class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text lead">Pineapples</p>
+                                    <p>Cored and sliced. Garnished with a straw.</p>
+                                    <a href="latlon.html" class="btn btn-primary">Request Vendor</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+  <!--Chick-fil-A card-->   <div class="card h-100"> 
+                                <img src="https://download.logo.wine/logo/Chick-fil-A/Chick-fil-A-Logo.wine.png" 
+                                class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text lead">Chick-fil-A</p>
+                                    <p>Full menu available</p>
+                                    <a href="latlon.html" class="btn btn-primary">Request Vendor</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+    <!--Dippin Dots card-->   <div class="card h-100">    
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Dippin%27_Dots_%28logo%29.png" 
+                                class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text lead">Dippin Dots Ice Cream</p>
+                                    <p>Flavors include chocolate and vanilla</p>
+                                    <a href="latlon.html" class="btn btn-primary">Request Vendor</a>                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+    <!--Boiled Peanuts card--> <div class="card h-100">    
+                                <img src="https://michaelswoodcraft.wordpress.com/wp-content/uploads/2014/02/cup-of-boiled-peanuts.gif"
+                                class="card-img-top">
+                                <div class="card-body">
+                                    <p class="card-text lead">Boiled Peanuts</p>
+                                    <p> Choice between salted or spicy</p>
+                                    <a href="latlon.html" class="btn btn-primary">Request Vendor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+                crossorigin="anonymous"></script>
+            </body>
+            </html>
